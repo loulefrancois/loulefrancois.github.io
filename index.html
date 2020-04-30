@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<meta charset="utf-8" />
+
+
+<head>
+
+    <!-- Ce qui est écris sur l'onglet : -->
+    <title>Métiers invisibles</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/fluid_grid.css" />
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=BioRhyme+Expanded:wght@200;300;400;700;800&family=BioRhyme:wght@200;300;400;700;800&display=swap" rel="stylesheet">
+    <!-- JAVASCRIPT/QUERY -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+</head>
+
+
+<body>
+
+
+    <!-- TOOLBAR -->
+
+    <div id="ToolBar">
+
+        <div id="titre">
+
+            <h1>Les métiers invisibles</h1>
+
+        </div>
+
+
+        <div id="zoom">
+            <span data-zoom="+"></span><span data-zoom="-"></span><input type="number">
+        </div>
+
+    </div>
+
+    <!-- TEXTE À DROITE -->
+
+    <div id="texte">
+
+        <p id="texte-intro">
+
+            <span class="croixtexte">&#10799;</span><br>
+            Le projet Métiers invisible a pour but de montrer les métiers qui nous entourent durant cette crise sanitaire. Ces métiers sont pour la pluspart les moins bien payés et les moins bien valorisé dans notre société alors qu'ils font partie actuellement des métiers considéré indispensable par l'État.<br><br>
+            Dominique Méda, sociologue et philosophe remet en question la place du travail dans notre vie. Elle nous explique qu'à l'heure de cette crise sanitaire mondiale les métiers importants sont ceux qui nous permettent de continuer à vivre. Les métiers alimentaires et médicaux, mais aussi ceux du "care". Qui sont des métiers qui "consistent à apporter une réponse concrète aux besoins des autres - travail domestique, de soins, d'éducation, de soutien ou d'assistance" et sont en très grande majorité fait par des femmes (qui auraient naturellement ces capacités d'attention, de soin, d'écoute... etc).<br><br>
+            <a href="https://www.pourleco.com/ca-clashe/debat-des-economistes/dominique-meda-la-crise-du-covid-19-nous-oblige-reevaluer-lutilite">Dominique Méda : "La crise du Covid-19 nous oblige à réevaluer l'utilité sociale des métiers"</a>,<br>Pour l'Éco, 23 avril 2020.<br><br>
+            <a href="https://www.20minutes.fr/economie/2748911-20200327-face-coronavirus-redecouvrons-utilite-immense-metiers-invisibles-explique-sociologue-dominique-meda">Face au coronavirus, « nous redécouvrons l’utilité immense de métiers invisibles »</a>,<br>20 minutes, 27 mars 2020.
+
+        </p>
+
+        <p id="legende"><span class="croixtextelegende">&#10799;</span><br>
+            Légende :<br>
+            La carte montre la zone à laquelle j'ai accès : 1km autour de chez moi.<br>
+            <span style="background: #791CF8; color: #791CF8;">bla</span> Services publics<br>
+            <span style="background: #00FF00; color: #00FF00;">bla</span> Secteur médical et care<br>
+            <!--<span style="background: #000CFF; color: #000CFF;">bla</span> commerces alimentaires<br>-->
+            <span style="background: #FF007F; color: #FF007F;">bla</span> Métiers qui travaillent autrement<br>
+            <span style="background: #FFFF00; color: #FFFF00;">bla</span> Commerces alimentaires<br>
+            <span><img src="images/legende_vert.png" style="width: 25px;"></span> Espaces publics autorisé d'accès<br>
+            Utilisation de l'espace autorisé :<br>
+            <span style="color: #000CFF;">_ _ _ </span>En courant<br>
+            <span style="color: #000CFF;">- - - </span>En marchant<br>
+
+        </p>
+
+        <!-- TEXTES -->
+
+
+        <p id="un_texte"><span class="croixtextevert">&#10799;</span><br>
+            <span class="titre">Médecins généraliste</span><br>
+            Femme<br><br>
+            Travail uniquement en visio depuis le confinement.
+        </p>
+
+        <p id="deux_texte"><span class="croixtextevert">&#10799;</span><br>
+            <span class="titre">Infirmière à domicile, aide soignante, aide-ménagère</span><br><br>
+            Ces métiers sont réalisés quasiment strictement par des femmes.<br>
+            La part de femme dans le métier d'aide-soignantes est de 90,4%. (Source: <a href="https://www.inegalites.fr/Une-repartition-desequilibree-des-professions-entre-les-hommes-et-les-femmes?id_theme=22">inegalites.fr</a>)<br>
+            La part de femme pour le métier d'infirmières et sage-femme est de 87,7%. (Source: <a href="https://www.inegalites.fr/Une-repartition-desequilibree-des-professions-entre-les-hommes-et-les-femmes?id_theme=22">inegalites.fr</a>)<br>
+        </p>
+
+        <p id="trois_texte"><span class="croixtexteviolet">&#10799;</span><br>
+            <span class="titre">Chargé d'accueil, conseiller</span><br>
+            La Poste_03/04/2020_14:37<br>
+            2 femmes<br><br>
+            Envoie d'un colis, 2 agents femmes sans masques sont présente.
+        </p>
+
+        <p id="quatre_texte"><span class="croixtexteviolet">&#10799;</span><br>
+            <span class="titre">Standardiste</span><br>
+            Caf et assurance maladie_03/04/2020_11:43<br>
+            Femmes<br><br>
+            Les centres d'appels fonctionnent toujours et sont surchargés, principalement du au fait qu'il n'y ait pas tous les employés.
+        </p>
+
+        <p id="cinq_texte"><span class="croixtextejaune">&#10799;</span><br>
+            <span class="titre">Vendeur</span> <br>
+            Carrefour_29/04/2020_17:12<br>
+            2 hommes<br><br>
+            La part de femme dans la vente est de 73,5%. (Source: <a href="https://www.inegalites.fr/Une-repartition-desequilibree-des-professions-entre-les-hommes-et-les-femmes?id_theme=22">inegalites.fr</a>)
+        </p>
+
+        <p id="six_texte"><span class="croixtexterose">&#10799;</span><br>
+            <span class="titre">Commerçants</span><br>
+            Mistinguette_15/04/2020_11/45<br>
+            1 homme, 1 femme<br><br>
+            Ils réalisent de la vente à emporter ou de la livraison pour pouvoir continuer de travailler.
+        </p>
+
+        <p id="sept_texte"><span class="croixtextejaune">&#10799;</span><br>
+            <span class="titre">Boucher</span><br>
+            Boucherie St Aubin_05/04/2020_11:15<br>
+            3 hommes, 1 femme en caisse<br><br>
+
+        </p>
+
+        <p id="huit_texte"><span class="croixtextevert">&#10799;</span><br>
+            <span class="titre">Pharmacienne</span><br>
+            Pharmacie St Aubin_29/04/2020_15:48<br>
+            2 femmes<br><br>
+        </p>
+
+        <p id="neuf_texte"><span class="croixtextejaune">&#10799;</span><br>
+            <span class="titre">Boulanger</span><br>
+            Boulangerie St Aubin_29/04/2020_17:30<br>
+            1 femme en caisse<br><br>
+        </p>
+
+        <p id="dix_texte"><span class="croixtexterose">&#10799;</span><br>
+            <span class="titre">Monteur fibre, et S.A.V.</span><br>
+            À mon domicile_09/04/2020_08:25<br>
+            2 hommes<br><br>
+            Qui réalisent du S.A.V. depuis chez eux en dehors des interventions chez les clients. Réalisées dans le "respect des gestes barrières". Ils sont indispensable au télétravail.
+        </p>
+
+        <p id="onze_texte"><span class="croixtexteviolet">&#10799;</span><br>
+            <span class="titre">Facteur</span><br>
+            Rue André Mercadier_2 fois/semaines<br>
+            1 homme<br><br>
+        </p>
+
+        <p id="douze_texte"><span class="croixtexterose">&#10799;</span><br>
+            <span class="titre">Gérant et pizzaïolo</span><br>
+            Petite Italie_26/04/2020_21:15<br>
+            1 homme<br><br>
+            Il doit fermer plus tôt que d'habitude. Mais aujourd'hui il a dépassé.
+        </p>
+
+    </div>
+
+    <!-- CARTE -->
+
+    <div id="Main" class="canMove">
+
+        <div class="imagefond">
+            <img src="images/carte_metier04-01.jpg">
+        </div>
+
+        <img class="un" src="images/contour/contour-01.jpg" style="width: 2.083%; left: 21.66%; top: 72.064%;">
+
+        <img class="deux" src="images/contour/contour-02.jpg" style="width: 1.66%; left: 33.75%; top: 47.08%;">
+
+        <img class="trois" src="images/contour/contour-03.jpg" style="width: 1.66%; left: 38.75%; top: 57.97%;">
+
+        <img class="quatre" src="images/contour/contour-04.jpg" style="width: 8.333%; left: 31.25%; top: 61.19%;">
+
+        <img class="cinq" src="images/contour/contour-05.jpg" style="width: 2.083%; left: 48.75%; top: 35.6%;">
+
+        <img class="six" src="images/contour/contour-06.jpg" style="width: 1.667%; left: 42.083%; top: 47.12%;">
+
+        <img class="sept" src="images/contour/contour-07.jpg" style="width: 1.25%; left: 44.167%; top: 49.02%;">
+
+        <img class="huit" src="images/contour/contour-08.jpg" style="width: 1.25%; left: 45.833%; top: 48.39%;">
+
+        <img class="neuf" src="images/contour/contour-09.jpg" style="width: 1.25%; left: 47.083%; top: 49.05%;">
+
+        <img class="dix" src="images/contour/contour-10.jpg" style="width: 1.667%; left: 51.25%; top: 47.1%;">
+
+        <img class="onze" src="images/contour/contour-11.jpg" style="width: 0.41%; left: 49.583%; top: 51.6%;">
+
+        <img class="douze" src="images/contour/contour-12.jpg" style="width: 1.25%; left: 67.083%; top: 60.5%;">
+
+    </div>
+
+
+    <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
+
+    <script>
+        // /////////////////////////////////
+        // Texte intro
+        $(".croixtexte").on('click', function() {
+            $("#texte-intro").css("display", "none");
+        });
+
+        $(".un, .deux, .trois, .quatre, .cinq, .six, .sept, .huit, .neuf, .dix, .onze, .douze").on('click', function() {
+            $("#texte-intro").css("display", "none");
+        });
+        // /////////////////////////////////
+        // LÉGENDE
+
+        $(".croixtextelegende").on('click', function() {
+            $("#legende").css("display", "none");
+        });
+
+        // /////////////////////////////////
+        // UN
+        $(".un").on('click', function() {
+            $("#un_texte").css("display", "block");
+            $(".un").css("opacity", "0");
+            $("#deux_texte, #trois_texte, #quatre_texte, #cinq_texte, #six_texte, #sept_texte, #huit_texte, #neuf_texte, #dix_texte, #onze_texte, #douze_texte").css("display", "none");
+        });
+
+        $(".croixtextevert").on('click', function() {
+            $("#un_texte").css("display", "none");
+        });
+
+        // /////////////////////////////////
+        // DEUX
+        $(".deux").on('click', function() {
+            $("#deux_texte").css("display", "block");
+            $(".deux").css("opacity", "0");
+            $("#un_texte, #trois_texte, #quatre_texte, #cinq_texte, #six_texte, #sept_texte, #huit_texte, #neuf_texte, #dix_texte, #onze_texte, #douze_texte").css("display", "none");
+        });
+
+        $(".croixtextevert").on('click', function() {
+            $("#deux_texte").css("display", "none");
+        });
+
+        // /////////////////////////////////
+        // TROIS
+        $(".trois").on('click', function() {
+            $("#trois_texte").css("display", "block");
+            $(".trois").css("opacity", "0");
+            $("#un_texte, #deux_texte, #quatre_texte, #cinq_texte, #six_texte, #sept_texte, #huit_texte, #neuf_texte, #dix_texte, #onze_texte, #douze_texte").css("display", "none");
+        });
+
+        $(".croixtexteviolet").on('click', function() {
+            $("#trois_texte").css("display", "none");
+        });
+
+        // /////////////////////////////////
+        // QUATRE
+        $(".quatre").on('click', function() {
+            $("#quatre_texte").css("display", "block");
+            $(".quatre").css("opacity", "0");
+            $("#un_texte, #deux_texte, #trois_texte, #cinq_texte, #six_texte, #sept_texte, #huit_texte, #neuf_texte, #dix_texte, #onze_texte, #douze_texte").css("display", "none");
+        });
+
+        $(".croixtexteviolet").on('click', function() {
+            $("#quatre_texte").css("display", "none");
+        });
+
+        // /////////////////////////////////
+        // CINQ
+        $(".cinq").on('click', function() {
+            $("#cinq_texte").css("display", "block");
+            $(".cinq").css("opacity", "0");
+            $("#un_texte, #deux_texte, #trois_texte, #quatre_texte, #six_texte, #sept_texte, #huit_texte, #neuf_texte, #dix_texte, #onze_texte, #douze_texte").css("display", "none");
+        });
+
+        $(".croixtextejaune").on('click', function() {
+            $("#cinq_texte").css("display", "none");
+        });
+
+        // /////////////////////////////////
+        // SIX
+        $(".six").on('click', function() {
+            $("#six_texte").css("display", "block");
+            $(".six").css("opacity", "0");
+            $("#un_texte, #deux_texte, #trois_texte, #quatre_texte, #cinq_texte, #sept_texte, #huit_texte, #neuf_texte, #dix_texte, #onze_texte, #douze_texte").css("display", "none");
+        });
+
+        $(".croixtexterose").on('click', function() {
+            $("#six_texte").css("display", "none");
+        });
+
+        // /////////////////////////////////
+        // SEPT
+        $(".sept").on('click', function() {
+            $("#sept_texte").css("display", "block");
+            $(".sept").css("opacity", "0");
+            $("#un_texte, #deux_texte, #trois_texte, #quatre_texte, #cinq_texte, #six_texte, #huit_texte, #neuf_texte, #dix_texte, #onze_texte, #douze_texte").css("display", "none");
+        });
+
+        $(".croixtextejaune").on('click', function() {
+            $("#sept_texte").css("display", "none");
+        });
+
+        // /////////////////////////////////
+        // HUIT
+        $(".huit").on('click', function() {
+            $("#huit_texte").css("display", "block");
+            $(".huit").css("opacity", "0");
+            $("#un_texte, #deux_texte, #trois_texte, #quatre_texte, #cinq_texte, #six_texte, #sept_texte, #neuf_texte, #dix_texte, #onze_texte, #douze_texte").css("display", "none");
+        });
+
+        $(".croixtextevert").on('click', function() {
+            $("#huit_texte").css("display", "none");
+        });
+
+        // /////////////////////////////////
+        // NEUF
+        $(".neuf").on('click', function() {
+            $("#neuf_texte").css("display", "block");
+            $(".neuf").css("opacity", "0");
+            $("#un_texte, #deux_texte, #trois_texte, #quatre_texte, #cinq_texte, #six_texte, #sept_texte, #huit_texte, #dix_texte, #onze_texte, #douze_texte").css("display", "none");
+        });
+
+        $(".croixtextejaune").on('click', function() {
+            $("#neuf_texte").css("display", "none");
+        });
+
+        // /////////////////////////////////
+        // DIX
+        $(".dix").on('click', function() {
+            $("#dix_texte").css("display", "block");
+            $(".dix").css("opacity", "0");
+            $("#un_texte, #deux_texte, #trois_texte, #quatre_texte, #cinq_texte, #six_texte, #sept_texte, #huit_texte, #neuf_texte, #onze_texte, #douze_texte").css("display", "none");
+        });
+
+        $(".croixtexterose").on('click', function() {
+            $("#dix_texte").css("display", "none");
+        });
+
+        // /////////////////////////////////
+        // ONZE
+        $(".onze").on('click', function() {
+            $("#onze_texte").css("display", "block");
+            $(".onze").css("opacity", "0");
+            $("#un_texte, #deux_texte, #trois_texte, #quatre_texte, #cinq_texte, #six_texte, #sept_texte, #huit_texte, #neuf_texte, #dix_texte, #douze_texte").css("display", "none");
+        });
+
+        $(".croixtexteviolet").on('click', function() {
+            $("#onze_texte").css("display", "none");
+        });
+
+        // /////////////////////////////////
+        // DOUZE
+        $(".douze").on('click', function() {
+            $("#douze_texte").css("display", "block");
+            $(".douze").css("opacity", "0");
+            $("#un_texte, #deux_texte, #trois_texte, #quatre_texte, #cinq_texte, #six_texte, #sept_texte, #huit_texte, #neuf_texte, #dix_texte, #onze_texte").css("display", "none");
+        });
+
+        $(".croixtexterose").on('click', function() {
+            $("#douze_texte").css("display", "none");
+        });
+    </script>
+
+
+
+    <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
+
+    <script>
+        $(document).ready(function() {
+            var colors = ["#791CF8", "#000CFF", "#FF007F", "#00FF00", "#FFFF00"];
+            var rand = Math.floor(Math.random() * colors.length);
+            $("#ToolBar").css("color", colors[rand]);
+        });
+    </script>
+
+
+    <!-- SCRIPT TEST -->
+
+    <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
+
+    <!-- SCRIPT DE FONCTIONNEMENT DE LA PAGE -->
+
+    <script>
+        function addEvent(a, b, c, d) {
+            (a.addEventListener) ? a.addEventListener(b, c, d || !1): a.attachEvent("on" + b, c);
+        }
+
+        function removeEvent(a, b, c, d) {
+            a.removeEventListener ? a.removeEventListener(b, c, d || !1) : a.detachEvent("on" + b, c);
+        }
+
+        function endMove() {
+            main.className = "canMove";
+            removeEvent(document, "mousemove", doMove);
+            removeEvent(document, "mouseup", endMove);
+
+        }
+
+        function doMove(e) {
+            var dX = initialClickX - e.clientX,
+                dY = initialClickY - e.clientY;
+            window.scrollTo(initialScrollX + dX, initialScrollY + dY);
+
+        }
+
+        function initMove(e) {
+
+            if (!outilMain) return;
+
+            e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+
+            main.className = "inMove";
+
+            initialScrollX = window.pageXOffset || document.documentElement.scrollLeft;
+            initialScrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+            initialClickX = e.clientX;
+            initialClickY = e.clientY;
+
+            addEvent(document, "mousemove", doMove);
+            addEvent(document, "mouseup", endMove);
+
+        }
+
+        function doZoom(d) {
+
+            actualZoom += deltaZoom * d;
+            actualZoom < deltaZoom && (actualZoom = deltaZoom);
+
+            main.style[transform] = "scale(" + actualZoom + ")";
+
+            zoomInput.value = parseInt(actualZoom * 100);
+
+        }
+
+        function doZoomIn() {
+
+            doZoom(1);
+
+        }
+
+        function doZoomOut() {
+
+            doZoom(-1);
+
+        }
+
+        function changeManualZoom() {
+
+            actualZoom = parseInt(zoomInput.value) / 100;
+            main.style[transform] = "scale(" + actualZoom + ")";
+
+        }
+
+        function zoomWithScroll(e) {
+
+            if (!zoomAuScroll) return;
+
+            e.stopPropagation ? e.stopPropagation() : e.cancelBubble;
+            e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+
+            var zoomUp = e.detail < 0 || e.wheelDelta > 0;
+
+            doZoom(zoomUp ? 1 : -1);
+
+        }
+
+        function modeMain() {
+
+            outilMain = outilMain ? false : true;
+            btnMain.className = outilMain ? "active" : "";
+            main.className = outilMain ? "canMove" : "";
+
+        }
+
+        function modeZoom() {
+
+            zoomAuScroll = zoomAuScroll ? false : true;
+            btnZoom.className = zoomAuScroll ? "active" : "";
+
+        }
+
+        var transform;
+
+        if ("transform" in document.body.style) {
+
+            transform = "transform";
+
+        } else {
+
+            for (p in document.body.style) {
+
+                if (/^((Moz|(?:w|W)ebkit|ms|o)Transform)/.exec(p)) {
+                    transform = RegExp.$1;
+                    break;
+                }
+
+            }
+
+        }
+
+        var main = document.getElementById("Main");
+
+        var zoomIn = document.querySelector("#zoom span:first-child"),
+            zoomOut = document.querySelector("#zoom span+span"),
+            zoomInput = document.querySelector("#zoom input");
+
+        var btnMain = document.querySelector("#modes span:first-child"),
+            btnZoom = document.querySelector("#modes span+span");
+
+        var actualZoom = 1,
+            deltaZoom = .1;
+
+        var outilMain = true,
+            zoomAuScroll = false;
+
+
+        zoomInput.value = "100";
+
+        if (transform) {
+            main.style[transform + "Origin"] = "0 0"
+        } else {
+            document.getElementById("zoom").style.display = btnZoom.style.display = "none";
+        }
+
+
+        addEvent(main, "mousedown", initMove);
+        addEvent(zoomIn, "click", doZoomIn);
+        addEvent(zoomOut, "click", doZoomOut);
+        addEvent(zoomInput, "change", changeManualZoom);
+        addEvent(btnMain, "click", modeMain);
+        addEvent(btnZoom, "click", modeZoom);
+        addEvent(document, "DOMMouseScroll", zoomWithScroll);
+        addEvent(document, "mousewheel", zoomWithScroll);
+    </script>
+
+</body>
+
+</html>
